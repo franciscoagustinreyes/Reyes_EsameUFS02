@@ -17,11 +17,12 @@ public class PizzaService implements HttpHandler {
         //Inizializzare pizze
         this.listaPizza = new ArrayList<>();
         listaPizza.add(new Pizza("Margherita    ", new String[]{"Tomato", "Cheese"}, 7.99));
-        listaPizza.add(new Pizza("Vegetariana   ", new String[]{"Tomato", "Mushrooms", "Peppers", "Cheese"}, 12.99));
+        listaPizza.add(new Pizza("Bufalina      ", new String[]{"Rucola", "Cheese"}, 9.99));
         listaPizza.add(new Pizza("Diavola       ", new String[]{"Tomato", "Cheese", "Pepperoni"}, 10.99));
-        listaPizza.add(new Pizza("Bianca        ", new String[]{"Cheese", "Salad", "Olives"}, 4.99));
+        listaPizza.add(new Pizza("Rustica       ", new String[]{"Cheese", "Bacon"}, 8.99));
         listaPizza.add(new Pizza("Prosciutto    ", new String[]{"Tomato", "Cheese", "Prosciutto"}, 8.99));
         listaPizza.add(new Pizza("Rossa         ", new String[]{"Tomato", "Olives", "Oregano"}, 5.99));
+        listaPizza.add(new Pizza("Valdostana    ", new String[]{"Cheese", "Prosciutto"}, 7.99));
     }
 
     public void handle(HttpExchange exchange) throws IOException {
