@@ -16,9 +16,12 @@ public class PizzaService implements HttpHandler {
     public PizzaService() {
         //Inizializzare pizze
         this.listaPizza = new ArrayList<>();
-        listaPizza.add(new Pizza("Margherita", new String[]{"Tomato", "Mozzarella"}, 8.50));
-        listaPizza.add(new Pizza("Pepperoni", new String[]{"Tomato", "Pepperoni", "Cheese"}, 9.50));
-        listaPizza.add(new Pizza("Vegetariana", new String[]{"Tomato", "Mushrooms", "Peppers"}, 7.50));
+        listaPizza.add(new Pizza("Margherita    ", new String[]{"Tomato", "Cheese"}, 7.99));
+        listaPizza.add(new Pizza("Vegetariana   ", new String[]{"Tomato", "Mushrooms", "Peppers", "Cheese"}, 12.99));
+        listaPizza.add(new Pizza("Diavola       ", new String[]{"Tomato", "Cheese", "Pepperoni"}, 10.99));
+        listaPizza.add(new Pizza("Bianca        ", new String[]{"Cheese", "Salad", "Olives"}, 4.99));
+        listaPizza.add(new Pizza("Prosciutto    ", new String[]{"Tomato", "Cheese", "Prosciutto"}, 8.99));
+        listaPizza.add(new Pizza("Rossa         ", new String[]{"Tomato", "Olives", "Oregano"}, 5.99));
     }
 
     public void handle(HttpExchange exchange) throws IOException {
@@ -49,7 +52,7 @@ public class PizzaService implements HttpHandler {
         StringBuilder result = new StringBuilder();
         for (Pizza pizza : listaPizza) {
             if (containsIngredient(pizza, ingredienti)) {
-                result.append(pizza.getNome()).append("\n");
+                result.append(pizza.getNome()).append(" - €").append(pizza.getPrezzo()).append("\n");
             }
         }
         return result.toString();
@@ -69,7 +72,7 @@ public class PizzaService implements HttpHandler {
 
         StringBuilder result = new StringBuilder();
         for (Pizza pizza : listaPizza) {
-            result.append(pizza.getNome()).append(" - ").append(pizza.getPrezzo()).append("\n");
+            result.append(pizza.getNome()).append(" - €").append(pizza.getPrezzo()).append("\n");
         }
         return result.toString();
     }

@@ -1,5 +1,7 @@
 package it.itsrizzoli;
 
+import java.util.Arrays;
+
 public class Pizza {
     private String nome;
     private String[] ingredienti = new String[5];
@@ -35,5 +37,14 @@ public class Pizza {
 
     public void setPrezzo(double prezzo) {
         this.prezzo = prezzo;
+    }
+
+    //toString
+    public String toString() {
+        return "Pizza{" +
+                "nome='" + nome + '\'' +
+                ", ingredienti=" + Arrays.toString(ingredienti) +
+                ", prezzo=" + prezzo +
+                '}';
     }
 }
