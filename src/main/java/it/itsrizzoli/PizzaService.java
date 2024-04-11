@@ -57,7 +57,7 @@ public class PizzaService implements HttpHandler {
         }
         return result.toString();
     }
-
+    //controlla se contiene un certo ingrediente
     private boolean containsIngredient(Pizza pizza, String ingredient) {
         for (String ingredienti : pizza.getIngredienti()) {
             if (ingredienti.equalsIgnoreCase(ingredient)) {

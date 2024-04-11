@@ -10,7 +10,6 @@ public class App {
         //Server HTTP
         HttpServer server = HttpServer.create(new InetSocketAddress(8081), 0);
 
-        //Gestore delle richieste
         server.createContext("/", new PizzaService());
 
         //Avvia il server

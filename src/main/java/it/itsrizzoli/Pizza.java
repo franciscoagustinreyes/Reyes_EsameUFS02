@@ -39,7 +39,6 @@ public class Pizza {
         this.prezzo = prezzo;
     }
 
-    //toString
     public String toString() {
         return "Pizza{" +
                 "nome='" + nome + '\'' +
