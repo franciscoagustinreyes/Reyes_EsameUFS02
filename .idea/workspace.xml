@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d576ef6-9cae-4948-ba7c-a379b7b9154b" name="Changes" comment="Completamento classe Pizza, creazione classe PizzaService per gestire le richieste, cambiata la porta 8080 a 8081.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2d576ef6-9cae-4948-ba7c-a379b7b9154b" name="Changes" comment="Aggiunte altre pizze alla lista.">
       <change beforePath="$PROJECT_DIR$/src/main/java/it/itsrizzoli/PizzaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/itsrizzoli/PizzaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712837652712</updated>
-      <workItem from="1712837653820" duration="4283000" />
+      <workItem from="1712837653820" duration="4616000" />
     </task>
     <task id="LOCAL-00001" summary="Creazione Classe Pizza">
       <option name="closed" value="true" />
@@ -111,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712841003290</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aggiunte altre pizze alla lista.">
+      <option name="closed" value="true" />
+      <created>1712842034607</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712842034607</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creazione Classe Pizza" />
     <MESSAGE value="Completamento classe Pizza, creazione classe PizzaService per gestire le richieste, cambiata la porta 8080 a 8081." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completamento classe Pizza, creazione classe PizzaService per gestire le richieste, cambiata la porta 8080 a 8081." />
+    <MESSAGE value="Aggiunte altre pizze alla lista." />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunte altre pizze alla lista." />
   </component>
 </project>
